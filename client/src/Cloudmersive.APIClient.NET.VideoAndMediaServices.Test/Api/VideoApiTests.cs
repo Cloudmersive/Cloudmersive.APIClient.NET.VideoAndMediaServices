@@ -19,6 +19,7 @@ using NUnit.Framework;
 
 using Cloudmersive.APIClient.NET.VideoAndMediaServices.Client;
 using Cloudmersive.APIClient.NET.VideoAndMediaServices.Api;
+using Cloudmersive.APIClient.NET.VideoAndMediaServices.Model;
 
 namespace Cloudmersive.APIClient.NET.VideoAndMediaServices.Test
 {
@@ -76,10 +77,9 @@ namespace Cloudmersive.APIClient.NET.VideoAndMediaServices.Test
             //int? maxHeight = null;
             //bool? preserveAspectRatio = null;
             //int? frameRate = null;
-            //bool? extendProcessingTime = null;
             //DateTime? startTime = null;
             //DateTime? timeSpan = null;
-            //var response = instance.VideoConvertToGif(inputFile, fileUrl, maxWidth, maxHeight, preserveAspectRatio, frameRate, extendProcessingTime, startTime, timeSpan);
+            //var response = instance.VideoConvertToGif(inputFile, fileUrl, maxWidth, maxHeight, preserveAspectRatio, frameRate, startTime, timeSpan);
             //Assert.IsInstanceOf<byte[]> (response, "response is byte[]");
         }
         
@@ -97,8 +97,7 @@ namespace Cloudmersive.APIClient.NET.VideoAndMediaServices.Test
             //bool? preserveAspectRatio = null;
             //int? frameRate = null;
             //int? quality = null;
-            //bool? extendProcessingTime = null;
-            //var response = instance.VideoConvertToMov(inputFile, fileUrl, maxWidth, maxHeight, preserveAspectRatio, frameRate, quality, extendProcessingTime);
+            //var response = instance.VideoConvertToMov(inputFile, fileUrl, maxWidth, maxHeight, preserveAspectRatio, frameRate, quality);
             //Assert.IsInstanceOf<byte[]> (response, "response is byte[]");
         }
         
@@ -116,9 +115,24 @@ namespace Cloudmersive.APIClient.NET.VideoAndMediaServices.Test
             //bool? preserveAspectRatio = null;
             //int? frameRate = null;
             //int? quality = null;
-            //bool? extendProcessingTime = null;
-            //var response = instance.VideoConvertToMp4(inputFile, fileUrl, maxWidth, maxHeight, preserveAspectRatio, frameRate, quality, extendProcessingTime);
+            //var response = instance.VideoConvertToMp4(inputFile, fileUrl, maxWidth, maxHeight, preserveAspectRatio, frameRate, quality);
             //Assert.IsInstanceOf<byte[]> (response, "response is byte[]");
+        }
+        
+        /// <summary>
+        /// Test VideoConvertToStillFrames
+        /// </summary>
+        [Test]
+        public void VideoConvertToStillFramesTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //System.IO.Stream inputFile = null;
+            //string fileUrl = null;
+            //int? maxWidth = null;
+            //int? maxHeight = null;
+            //Object framesPerSecond = null;
+            //var response = instance.VideoConvertToStillFrames(inputFile, fileUrl, maxWidth, maxHeight, framesPerSecond);
+            //Assert.IsInstanceOf<StillFramesResult> (response, "response is StillFramesResult");
         }
         
         /// <summary>
@@ -135,8 +149,22 @@ namespace Cloudmersive.APIClient.NET.VideoAndMediaServices.Test
             //bool? preserveAspectRatio = null;
             //int? frameRate = null;
             //int? quality = null;
-            //bool? extendProcessingTime = null;
-            //var response = instance.VideoConvertToWebm(inputFile, fileUrl, maxWidth, maxHeight, preserveAspectRatio, frameRate, quality, extendProcessingTime);
+            //var response = instance.VideoConvertToWebm(inputFile, fileUrl, maxWidth, maxHeight, preserveAspectRatio, frameRate, quality);
+            //Assert.IsInstanceOf<byte[]> (response, "response is byte[]");
+        }
+        
+        /// <summary>
+        /// Test VideoCutVideo
+        /// </summary>
+        [Test]
+        public void VideoCutVideoTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //System.IO.Stream inputFile = null;
+            //string fileUrl = null;
+            //DateTime? startTime = null;
+            //DateTime? timeSpan = null;
+            //var response = instance.VideoCutVideo(inputFile, fileUrl, startTime, timeSpan);
             //Assert.IsInstanceOf<byte[]> (response, "response is byte[]");
         }
         
@@ -150,7 +178,72 @@ namespace Cloudmersive.APIClient.NET.VideoAndMediaServices.Test
             //System.IO.Stream inputFile = null;
             //string fileUrl = null;
             //var response = instance.VideoGetInfo(inputFile, fileUrl);
+            //Assert.IsInstanceOf<MediaInformation> (response, "response is MediaInformation");
+        }
+        
+        /// <summary>
+        /// Test VideoResizeVideo
+        /// </summary>
+        [Test]
+        public void VideoResizeVideoTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //System.IO.Stream inputFile = null;
+            //string fileUrl = null;
+            //int? maxWidth = null;
+            //int? maxHeight = null;
+            //int? frameRate = null;
+            //int? quality = null;
+            //string extension = null;
+            //var response = instance.VideoResizeVideo(inputFile, fileUrl, maxWidth, maxHeight, frameRate, quality, extension);
             //Assert.IsInstanceOf<byte[]> (response, "response is byte[]");
+        }
+        
+        /// <summary>
+        /// Test VideoResizeVideoSimple
+        /// </summary>
+        [Test]
+        public void VideoResizeVideoSimpleTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //System.IO.Stream inputFile = null;
+            //string fileUrl = null;
+            //int? maxWidth = null;
+            //int? maxHeight = null;
+            //int? frameRate = null;
+            //int? quality = null;
+            //string extension = null;
+            //var response = instance.VideoResizeVideoSimple(inputFile, fileUrl, maxWidth, maxHeight, frameRate, quality, extension);
+            //Assert.IsInstanceOf<byte[]> (response, "response is byte[]");
+        }
+        
+        /// <summary>
+        /// Test VideoScanForNsfw
+        /// </summary>
+        [Test]
+        public void VideoScanForNsfwTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //System.IO.Stream inputFile = null;
+            //string fileUrl = null;
+            //Object framesPerSecond = null;
+            //var response = instance.VideoScanForNsfw(inputFile, fileUrl, framesPerSecond);
+            //Assert.IsInstanceOf<NsfwResult> (response, "response is NsfwResult");
+        }
+        
+        /// <summary>
+        /// Test VideoSplitVideo
+        /// </summary>
+        [Test]
+        public void VideoSplitVideoTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //DateTime? splitTime = null;
+            //System.IO.Stream inputFile = null;
+            //string fileUrl = null;
+            //DateTime? timeSpan = null;
+            //var response = instance.VideoSplitVideo(splitTime, inputFile, fileUrl, timeSpan);
+            //Assert.IsInstanceOf<SplitVideoResult> (response, "response is SplitVideoResult");
         }
         
     }
