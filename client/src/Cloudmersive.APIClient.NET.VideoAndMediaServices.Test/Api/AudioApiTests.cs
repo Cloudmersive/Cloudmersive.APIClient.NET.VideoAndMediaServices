@@ -72,7 +72,7 @@ namespace Cloudmersive.APIClient.NET.VideoAndMediaServices.Test
             // TODO uncomment below to test the method and replace null with proper value
             //System.IO.Stream inputFile = null;
             //string fileUrl = null;
-            //Object bitRate = null;
+            //int? bitRate = null;
             //var response = instance.AudioConvertToAac(inputFile, fileUrl, bitRate);
             //Assert.IsInstanceOf<byte[]> (response, "response is byte[]");
         }
@@ -86,7 +86,7 @@ namespace Cloudmersive.APIClient.NET.VideoAndMediaServices.Test
             // TODO uncomment below to test the method and replace null with proper value
             //System.IO.Stream inputFile = null;
             //string fileUrl = null;
-            //Object bitRate = null;
+            //int? bitRate = null;
             //var response = instance.AudioConvertToM4a(inputFile, fileUrl, bitRate);
             //Assert.IsInstanceOf<byte[]> (response, "response is byte[]");
         }
@@ -100,7 +100,7 @@ namespace Cloudmersive.APIClient.NET.VideoAndMediaServices.Test
             // TODO uncomment below to test the method and replace null with proper value
             //System.IO.Stream inputFile = null;
             //string fileUrl = null;
-            //Object bitRate = null;
+            //int? bitRate = null;
             //var response = instance.AudioConvertToMp3(inputFile, fileUrl, bitRate);
             //Assert.IsInstanceOf<byte[]> (response, "response is byte[]");
         }
@@ -114,7 +114,7 @@ namespace Cloudmersive.APIClient.NET.VideoAndMediaServices.Test
             // TODO uncomment below to test the method and replace null with proper value
             //System.IO.Stream inputFile = null;
             //string fileUrl = null;
-            //Object sampleRate = null;
+            //decimal? sampleRate = null;
             //var response = instance.AudioConvertToWav(inputFile, fileUrl, sampleRate);
             //Assert.IsInstanceOf<byte[]> (response, "response is byte[]");
         }

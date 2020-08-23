@@ -130,7 +130,7 @@ namespace Cloudmersive.APIClient.NET.VideoAndMediaServices.Test
             //string fileUrl = null;
             //int? maxWidth = null;
             //int? maxHeight = null;
-            //Object framesPerSecond = null;
+            //decimal? framesPerSecond = null;
             //var response = instance.VideoConvertToStillFrames(inputFile, fileUrl, maxWidth, maxHeight, framesPerSecond);
             //Assert.IsInstanceOf<StillFramesResult> (response, "response is StillFramesResult");
         }
@@ -226,7 +226,7 @@ namespace Cloudmersive.APIClient.NET.VideoAndMediaServices.Test
             // TODO uncomment below to test the method and replace null with proper value
             //System.IO.Stream inputFile = null;
             //string fileUrl = null;
-            //Object framesPerSecond = null;
+            //decimal? framesPerSecond = null;
             //var response = instance.VideoScanForNsfw(inputFile, fileUrl, framesPerSecond);
             //Assert.IsInstanceOf<NsfwResult> (response, "response is NsfwResult");
         }
