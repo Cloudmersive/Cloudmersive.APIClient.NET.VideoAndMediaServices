@@ -21,7 +21,7 @@ $slnpath = Resolve-Path ./client/Cloudmersive.APIClient.NET.VideoAndMediaService
 (Get-Content $nuspecpath).replace('<owners>$author$</owners>', "<owners>Cloudmersive</owners>") | Set-Content $nuspecpath
 (Get-Content $nuspecpath).replace('<description>A library generated from a Swagger doc</description>', "<description>Convert and encode video and media files and content between file formats.  On-demand.</description>") | Set-Content $nuspecpath
 (Get-Content $nuspecpath).replace('<!-- Authors contain text that appears directly on the gallery -->', "<iconUrl>https://cloudmersive.com/images/cmsdk.png</iconUrl>") | Set-Content $nuspecpath
-(Get-Content $nuspecpath).replace('<dependencies>', "<projectUrl>https://cloudmersive.com/video-and-media-services-api</projectUrl><dependencies>") | Set-Content $nuspecpath
+(Get-Content $nuspecpath).replace('<dependencies>', "<projectUrl>https://cloudmersive.com/video-and-media-services-api</projectUrl><licenseUrl>https://cloudmersive.com/eula/apache-2.0.txt</licenseUrl><dependencies>") | Set-Content $nuspecpath
 
 
 
